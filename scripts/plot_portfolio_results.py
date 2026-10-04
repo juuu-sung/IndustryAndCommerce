@@ -70,7 +70,10 @@ def main():
              color=muted, fontsize=9)
     OUTPUT.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUTPUT / 'model_performance.png', dpi=180, facecolor=fig.get_facecolor())
-    fig.savefig(OUTPUT / 'model_performance.svg', facecolor=fig.get_facecolor())
+    vector = OUTPUT / 'model_performance.svg'
+    fig.savefig(vector, facecolor=fig.get_facecolor())
+    # Matplotlib adds spaces before newlines in SVG paths; keep the artifact tidy.
+    vector.write_text('\n'.join(line.rstrip() for line in vector.read_text().splitlines()) + '\n')
     plt.close(fig)
     print(f'RMSE {baseline.rmse_ppm:.4f} -> {candidate.rmse_ppm:.4f}; improvement {improvement:.4f}%')
 
