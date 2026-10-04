@@ -1,0 +1,11 @@
+{
+  "target": "monthly_daily_stack_mean_nox",
+  "unit": "ppm",
+  "development_rows": 370,
+  "development_period": "2024-07 through 2025-12",
+  "retraining_comparison_rows": 168,
+  "retraining_comparison_period": "2026-01 through 2026-08",
+  "target_validity": "agency confirmation pending",
+  "independent_final_evaluation": false,
+  "candidate_deployed": false
+}

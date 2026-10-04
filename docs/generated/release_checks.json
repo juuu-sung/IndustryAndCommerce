@@ -1,0 +1,42 @@
+{
+  "snapshot_date_utc": "2026-10-04",
+  "python": "3.12.2",
+  "platform": "Darwin",
+  "pytest": {
+    "passed": 164,
+    "failed": 0,
+    "skipped": 0,
+    "warnings": 1,
+    "elapsed_seconds": 48.91
+  },
+  "http": {
+    "transport": "real_loopback_http",
+    "health_http_status": 200,
+    "predict_http_status": 200,
+    "prediction": {
+      "target": "monthly_daily_stack_mean_nox",
+      "unit": "ppm",
+      "value": 2.244285351808602
+    },
+    "analysis_status": "disabled",
+    "gemini_enabled": false,
+    "history_rows": 504,
+    "actual_gemini_call_verified": false
+  },
+  "source_manifest_files_checked": 34,
+  "source_checksum_mismatches": 0,
+  "credential_pattern_matches": 0,
+  "original_notebook_blob_unchanged": "0f8574098d8e30d54b1c6ccb8fb10aa8c41e3ea0",
+  "saved_model_or_target_changed": false,
+  "model_training_this_release": "existing small integration tests only; no new production training",
+  "actual_gemini_call_verified": false,
+  "provider_confirmed_target_available": false,
+  "publication_scope": "code_docs_aggregate_metrics_synthetic_example_only",
+  "raw_data_or_model_assets_published": false,
+  "public_checkout_pytest": {
+    "passed": 71,
+    "skipped_asset_dependent": 93,
+    "failed": 0,
+    "elapsed_seconds": 3.84
+  }
+}

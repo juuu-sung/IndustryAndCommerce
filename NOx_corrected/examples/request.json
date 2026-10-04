@@ -1,0 +1,19 @@
+{
+  "plant": "분당",
+  "unit": 1,
+  "month": "2024-07",
+  "capacity_mw": 100.0,
+  "generation_mwh": 10000.0,
+  "thermal_efficiency_pct": 40.0,
+  "utilization_pct": 50.0,
+  "bituminous_ton": 0.0,
+  "anthracite_ton": 0.0,
+  "oil_kl": 0.0,
+  "lng_ton": 2500.0,
+  "solid_ton": 0.0,
+  "pellet_ton": 0.0,
+  "temperature_c": 20.0,
+  "humidity_pct": 60.0,
+  "wind_speed_ms": 2.0,
+  "wind_direction_deg": 180.0
+}

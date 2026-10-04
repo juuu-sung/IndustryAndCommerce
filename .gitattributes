@@ -1,0 +1,6 @@
+# Keep archived source and model bytes unchanged for SHA-256 verification.
+NOx_corrected/data/** -text whitespace=-blank-at-eol,-blank-at-eof
+NOx_corrected/artifacts/** -text
+NOx_corrected/reports/**/models/** -text
+docs/archive/** whitespace=-blank-at-eol
+*.png binary

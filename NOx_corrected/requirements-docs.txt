@@ -1,0 +1,2 @@
+-r requirements-verified.txt
+matplotlib==3.9.2
