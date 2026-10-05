@@ -1,0 +1,131 @@
+{
+  "summary": {
+    "plant_count": 5,
+    "plant_unit_count": 22,
+    "month_count": 44,
+    "first_month": "2023-01",
+    "last_month": "2026-08",
+    "rows": 968,
+    "observed_targets": 936,
+    "missing_targets": 32,
+    "duplicate_keys": 0
+  },
+  "keys": [
+    "plant",
+    "unit",
+    "month"
+  ],
+  "input_groups": {
+    "monthly_operations": [
+      "capacity_mw",
+      "generation_mwh",
+      "thermal_efficiency_pct",
+      "utilization_pct"
+    ],
+    "fuel_mass_ton": [
+      "bituminous_ton",
+      "anthracite_ton",
+      "lng_ton",
+      "solid_ton",
+      "pellet_ton"
+    ],
+    "fuel_volume_kl": [
+      "oil_kl"
+    ],
+    "weather": [
+      "temperature_c",
+      "humidity_pct",
+      "wind_speed_ms",
+      "wind_sin",
+      "wind_cos"
+    ],
+    "previous_calendar_months": [
+      "nox_lag1",
+      "nox_roll3",
+      "nox_history_count",
+      "nox_lag1_missing"
+    ],
+    "seasonality": [
+      "month_sin",
+      "month_cos"
+    ],
+    "fuel_derived": [
+      "bituminous_ton_change",
+      "bituminous_ton_per_mwh",
+      "anthracite_ton_change",
+      "anthracite_ton_per_mwh",
+      "oil_kl_change",
+      "oil_kl_per_mwh",
+      "lng_ton_change",
+      "lng_ton_per_mwh",
+      "solid_ton_change",
+      "solid_ton_per_mwh",
+      "pellet_ton_change",
+      "pellet_ton_per_mwh"
+    ],
+    "plant_unit_encoding": [
+      "plant_분당",
+      "plant_삼천포",
+      "plant_여수",
+      "plant_영동",
+      "plant_영흥",
+      "unit_1",
+      "unit_2",
+      "unit_3",
+      "unit_4",
+      "unit_5",
+      "unit_6",
+      "unit_7",
+      "unit_8"
+    ]
+  },
+  "optional_input_groups": {
+    "yd_hourly_generation_patterns": [
+      "gen_hour_coverage",
+      "gen_zero_hour_fraction",
+      "gen_zero_day_fraction",
+      "gen_longest_zero_run_fraction",
+      "gen_zero_positive_transitions",
+      "gen_positive_hour_cv",
+      "gen_peak_to_positive_mean",
+      "gen_hour_ramp_relative_mean",
+      "operation_pattern_available"
+    ],
+    "weather_quality": [
+      "weather_temperature_coverage",
+      "weather_temperature_missing",
+      "weather_humidity_coverage",
+      "weather_humidity_missing",
+      "weather_wind_speed_coverage",
+      "weather_wind_speed_missing",
+      "weather_wind_direction_coverage",
+      "weather_wind_direction_missing"
+    ]
+  },
+  "target": {
+    "column": "target",
+    "name": "monthly_daily_stack_mean_nox",
+    "unit": "ppm",
+    "aggregation": "arithmetic mean of observed unit-day concentrations per month; unit-day concentration averages the supplied stack-day values",
+    "use": "training/scoring label; current-month target is not an input feature"
+  },
+  "fuel_basis_row_counts": {
+    "site_generation_share_estimate": 880,
+    "provider_reported_unit_month": 88
+  },
+  "scope": "aggregate schema metadata only; no original operational observations included",
+  "joins": {
+    "base": "monthly generation",
+    "nox_and_fuel": [
+      "plant",
+      "unit",
+      "month"
+    ],
+    "weather": [
+      "plant",
+      "month"
+    ],
+    "how": "left"
+  },
+  "feature_selection": "feature groups vary by experiment; final columns and input medians are fit on training rows only"
+}
