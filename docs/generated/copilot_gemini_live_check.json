@@ -1,0 +1,8 @@
+{
+  "actual_external_call_verified": false,
+  "credentials_configured": false,
+  "live_requested": true,
+  "reason": "live_flag_and_GEMINI_API_KEY_and_GEMINI_MODEL_required",
+  "secrets_in_output": false,
+  "status": "not_run"
+}

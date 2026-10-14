@@ -1,0 +1,94 @@
+{
+  "checks": [
+    {
+      "path": "/api/health",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/api/rag/status",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/api/rag/documents",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/api/rag/search",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/api/rag/search",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/api/rag/search",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/api/predict",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/api/copilot/cases",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/api/reports/drafts",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/api/reports/r_348c590f3a9cbd2a3cb6dbfa1c809273585e9ff7e9facc17b5fbee458da308b6",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/api/reports/r_348c590f3a9cbd2a3cb6dbfa1c809273585e9ff7e9facc17b5fbee458da308b6/html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8"
+    }
+  ],
+  "all_passed": true,
+  "retrieval_examples": {
+    "project": {
+      "status": "evidence_found",
+      "top_document": "project_target_validation",
+      "locator": {
+        "char_end": 291,
+        "char_start": 0,
+        "chunk_line_end": 70,
+        "chunk_line_start": 65,
+        "kind": "markdown_lines",
+        "line_end": 70,
+        "line_start": 65,
+        "section": "기관 확인→일평균 재현→타깃 규칙 확정→모델 재비교 / 3. 월 연구 타깃과 버전"
+      }
+    },
+    "technical": {
+      "status": "evidence_found",
+      "top_document": "epa_scr_manual",
+      "locator": {
+        "char_end": 2197,
+        "char_start": 1002,
+        "kind": "pdf_page",
+        "page_index": 18,
+        "pdf_page_number": 19,
+        "printed_page_label": null
+      }
+    },
+    "numeric": {
+      "status": "requires_numeric_tool",
+      "results": 0
+    }
+  },
+  "predict_unit": "ppm",
+  "report_rag_status": "not_enabled"
+}

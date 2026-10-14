@@ -54,6 +54,8 @@
 
 ![XGBoost·LightGBM 모델 개발과 Flask·Gemini 예측 설명 API 구성](docs/images/system_architecture.png)
 
-로컬 자료를 포함한 **164개 테스트 통과**, 실제 HTTP 요청 정상 응답을 확인했습니다.
+공모전 이후에는 고정 관측·예측과 실제 문서 **10개**의 근거를 JSON/HTML 보고서로 연결하고, **LangGraph·SQLite 기반 도구 실행·사용자 검토·재개**까지 확장했습니다. 기본 흐름은 규칙 기반이며 Gemini 설명·도구 선택은 코드/모의 검증 단계입니다. [진행 과정과 측정 결과](docs/COPILOT_WORKFLOW_20261014.md)를 기록했습니다.
+
+로컬 자료를 포함한 **419개 테스트 통과**, 실제 HTTP에서 검색·기존 예측·보고서·인증 검토/재개를 확인했습니다. 승인 검사는 합성 사례이며 실제 발전소 보고서는 검토 대기입니다.
 
 [모델 평가](docs/EVALUATION.md) · [데이터 정의](docs/DATA_QUALITY.md) · [API 설계](docs/API_GEMINI.md) · [코드 및 개발 안내](NOx_corrected/README.md)

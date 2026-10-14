@@ -1,0 +1,108 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "path": "/api/agent/status",
+      "status": 200
+    },
+    {
+      "path": "/api/rag/search/domain",
+      "status": 200
+    },
+    {
+      "path": "/api/predict",
+      "status": 200
+    },
+    {
+      "path": "/api/reports/evidence-drafts",
+      "status": 201
+    },
+    {
+      "path": "/api/reports/evidence/er_7afa8a218e3018541236ce1bbce3f01d6eafa53a41a725e2bb7d19e76ffd874a",
+      "status": 200
+    },
+    {
+      "path": "/api/reports/evidence/er_7afa8a218e3018541236ce1bbce3f01d6eafa53a41a725e2bb7d19e76ffd874a/html",
+      "status": 200
+    },
+    {
+      "path": "/api/agent/runs",
+      "status": 202
+    },
+    {
+      "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+      "status": 200
+    },
+    {
+      "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+      "status": 200
+    },
+    {
+      "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+      "status": 200
+    },
+    {
+      "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+      "status": 200
+    },
+    {
+      "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+      "status": 200
+    },
+    {
+      "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+      "status": 200
+    },
+    {
+      "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+      "status": 200
+    },
+    {
+      "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+      "status": 200
+    },
+    {
+      "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+      "status": 200
+    },
+    {
+      "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd/report",
+      "status": 200
+    },
+    {
+      "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd/report/html",
+      "status": 200
+    },
+    {
+      "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd/resume",
+      "status": 401
+    },
+    {
+      "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd/resume",
+      "status": 202
+    },
+    {
+      "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+      "status": 200
+    },
+    {
+      "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+      "status": 200
+    }
+  ],
+  "request_count": 23,
+  "real_ml_api_used": true,
+  "real_document_retrieval_used": true,
+  "approval_case": "synthetic_only",
+  "real_plant_report_approved": false,
+  "rule_tool_calls": 5,
+  "review_status": "approved",
+  "gemini_actual_call_verified": false,
+  "facts_unchanged": true,
+  "source_and_revision_bound": true,
+  "no_tool_reexecution_after_review": true
+}

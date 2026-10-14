@@ -11,11 +11,36 @@ from .predict import Predictor
 from .schema import ROOT
 
 
-def create_app(predictor=None, *, enable_gemini=False, llm_client=None):
+def create_app(predictor=None, *, enable_gemini=False, llm_client=None,
+               enable_copilot=True, copilot_service=None,
+               enable_rag=True, rag_service=None,
+               enable_evidence=True, evidence_service=None,
+               enable_agent=True, agent_service=None):
     app = Flask(__name__)
     app.config.update(MAX_CONTENT_LENGTH=32_768, JSON_SORT_KEYS=False)
     app.json.ensure_ascii = False
     predictor = predictor or Predictor()
+    if enable_copilot:
+        from .copilot.routes import create_blueprint
+        app.register_blueprint(create_blueprint(copilot_service))
+    if enable_rag:
+        from .copilot.rag.routes import create_blueprint as create_rag_blueprint
+        app.register_blueprint(create_rag_blueprint(rag_service))
+        from .copilot.rag.domain import DomainRetrieval
+        from .copilot.rag.domain_routes import create_blueprint as create_domain_blueprint
+        domain=DomainRetrieval(rag_service)
+        app.register_blueprint(create_domain_blueprint(domain))
+    else:
+        domain=None
+    if enable_evidence or enable_agent:
+        from .copilot.evidence.reports import EvidenceReportService
+        evidence_service=evidence_service if evidence_service is not None else EvidenceReportService(copilot_service,domain)
+    if enable_evidence:
+        from .copilot.evidence.routes import create_blueprint as create_evidence_blueprint
+        app.register_blueprint(create_evidence_blueprint(evidence_service))
+    if enable_agent:
+        from .copilot.agent.routes import create_blueprint as create_agent_blueprint
+        app.register_blueprint(create_agent_blueprint(agent_service,evidence=evidence_service))
 
     @app.get('/api/health')
     def health():

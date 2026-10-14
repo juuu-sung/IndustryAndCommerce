@@ -2,6 +2,10 @@
 
 공모전 이후 전처리·평가·API·관측 이력·기관 타깃 검증을 보완한 코드입니다. 프로젝트 개요와 주요 수치는 [최상위 README](../README.md), 코드별 진행 상황은 [진행 기록](../docs/PROGRESS.md)에 있습니다.
 
+RAG·Agent 확장으로 [사례 등록과 재검증](../docs/COPILOT_CASE_REGISTRY.md), 보고서와 [실제 문서 검색·3개 방식 비교](../docs/RAG_RETRIEVAL.md)를 구현했습니다. 다음 단계는 [구현 계획](../docs/COPILOT_IMPLEMENTATION_PLAN.md)에 정리했습니다.
+
+[근거 보고서와 Agent 구현 과정](../docs/COPILOT_WORKFLOW_20261014.md): 수치/문서 참조·검색 보완·Gemini 설명 계약·LangGraph/SQLite 검토/재개, 전체 419개 테스트와 실제 HTTP를 확인했습니다. 기본 Agent는 규칙 기반이며 Gemini 실제 호출은 키/모델 설정 후 검증해야 합니다.
+
 ## 설치와 기본 API
 
 데이터·모델은 GitHub에 포함하지 않습니다. 기존 작업 폴더를 가진 사용자는 저장소 최상위에서 아래 명령으로 로컬 파일을 연결합니다. 코드·문서와 공개 가상 예시는 덮어쓰지 않습니다. 기존 폴더가 없다면 필요한 자료를 확보하고 같은 형식으로 학습 모델을 먼저 구성해야 합니다.
@@ -106,5 +110,12 @@ python -m nox.candidate_selection \
 | `history.py`, `predict.py` | 관측 이력 갱신·시점 선택·저장 모델 추론 |
 | `app.py`, `llm.py`, `gemini_check.py` | REST API·Gemini 호출·실제 호출 점검 |
 | `target_validation.py`, `validated_training.py` | 기관 일평균 재현·타깃 버전·검증 후 재학습 |
+| `copilot/registry.py`, `archive_repository.py`, `calculations.py` | 고정 사례·파일 버전·달력 이력·저장 예측 오차 |
+| `copilot/report_builder.py`, `validators.py`, `renderers.py`, `routes.py` | 보고서 계약·검증·JSON/HTML·Flask API |
+| `copilot/rag/` | 문서 버전·원문 근거·E5 워커·BM25/Vector/Hybrid·검색 API·평가 |
+| `copilot/evidence/` | 기존 수치·문서 근거 봉투·LLM 참조/수치 보호·JSON/HTML |
+| `copilot/agent/` | 허용 도구·LangGraph·SQLite 체크포인트·인증 검토·개정·재개·복구 |
 
 공개 저장소에는 코드·집계 지표·그림을 포함했습니다. 실제 원천 자료·기준 모델·행별 예측·대량 후보 모델·개인 실행 로그는 모두 제외했습니다. 로컬 스냅샷을 연결하면 전체 테스트와 예측을 실행하고, 새 후보 모델은 위 명령으로 재생성할 수 있습니다.
+
+RAG·Agent 확장으로 [등록 사례 계산](../docs/COPILOT_CALCULATIONS.md), [기존 보고서](../docs/COPILOT_REPORTS.md), [문서 검색](../docs/RAG_RETRIEVAL.md), [근거 보고서·Agent 검토/재개](../docs/COPILOT_WORKFLOW_20261014.md)를 구현했습니다. 전체 구조는 [노션](https://app.notion.com/p/3f8a7839359181ee8286cf13ccbfba31)에 정리했습니다. 실제 Gemini 호출·설명 근거 충실성·새 조건/신규 호기·운영 배포는 후속 검증입니다.

@@ -1,0 +1,1294 @@
+{
+  "gold_version_id": "7708aaaf621bdd7b357ff268d49c2a9948742abb94e44f6bfdb99a20d753c33f",
+  "annotation_status": "assistant_source_span_checked; independent_expert_review_pending",
+  "questions": [
+    {
+      "category": "target",
+      "expected_status": "answerable",
+      "query": "NOx 연구 타깃은 무엇을 월별 평균한 값인가요?",
+      "question_id": "D01",
+      "required_evidence_groups": [
+        {
+          "group_id": "D01_g1",
+          "alternatives": [
+            {
+              "char_end": 180,
+              "char_start": 167,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_48",
+              "unit_sha256": "b61ba9d47e962be244597678d5cd24d75b7b9f372b65770d4ac675ca7be6c3e3",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 59,
+                "line_start": 48,
+                "section": "데이터, 타깃 정의와 품질 관리 / 연구 타깃 v0"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "units",
+      "expected_status": "answerable",
+      "query": "ppm에 발전량을 곱해서 월 배출량 kg을 만들 수 있나요?",
+      "question_id": "D02",
+      "required_evidence_groups": [
+        {
+          "group_id": "D02_g1",
+          "alternatives": [
+            {
+              "char_end": 483,
+              "char_start": 445,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_48",
+              "unit_sha256": "b61ba9d47e962be244597678d5cd24d75b7b9f372b65770d4ac675ca7be6c3e3",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 59,
+                "line_start": 48,
+                "section": "데이터, 타깃 정의와 품질 관리 / 연구 타깃 v0"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "units",
+      "expected_status": "answerable",
+      "query": "연료의 ton과 유류 kL를 왜 합산하지 않나요?",
+      "question_id": "D03",
+      "required_evidence_groups": [
+        {
+          "group_id": "D03_g1",
+          "alternatives": [
+            {
+              "char_end": 650,
+              "char_start": 636,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_19",
+              "unit_sha256": "6d1e2de81f0104093be2f055e66fa44315c0f3c22c5314e7702207826557fd2a",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 47,
+                "line_start": 19,
+                "section": "데이터, 타깃 정의와 품질 관리 / 통합 테이블과 모델 입력"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "calendar",
+      "expected_status": "answerable",
+      "query": "전월 자료가 누락되면 이전 관측 행을 사용하나요?",
+      "question_id": "D04",
+      "required_evidence_groups": [
+        {
+          "group_id": "D04_g1",
+          "alternatives": [
+            {
+              "char_end": 183,
+              "char_start": 159,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_60",
+              "unit_sha256": "7dee3a1c8fe33098635f3f7ea0a719309a79a0c3c62295af7c592054cfbf0267",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 76,
+                "line_start": 60,
+                "section": "데이터, 타깃 정의와 품질 관리 / 구현한 품질·특징 처리"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "quality",
+      "expected_status": "answerable",
+      "query": "NOx 정답이 없는 달을 0이나 중앙값으로 채워 학습하나요?",
+      "question_id": "D05",
+      "required_evidence_groups": [
+        {
+          "group_id": "D05_g1",
+          "alternatives": [
+            {
+              "char_end": 1751,
+              "char_start": 1721,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_19",
+              "unit_sha256": "6d1e2de81f0104093be2f055e66fa44315c0f3c22c5314e7702207826557fd2a",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 47,
+                "line_start": 19,
+                "section": "데이터, 타깃 정의와 품질 관리 / 통합 테이블과 모델 입력"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "validation",
+      "expected_status": "answerable",
+      "query": "결측 보완값과 특징 선택 기준은 어느 학습 구간에서 정하나요?",
+      "question_id": "D06",
+      "required_evidence_groups": [
+        {
+          "group_id": "D06_g1",
+          "alternatives": [
+            {
+              "char_end": 494,
+              "char_start": 462,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_60",
+              "unit_sha256": "7dee3a1c8fe33098635f3f7ea0a719309a79a0c3c62295af7c592054cfbf0267",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 76,
+                "line_start": 60,
+                "section": "데이터, 타깃 정의와 품질 관리 / 구현한 품질·특징 처리"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "quality",
+      "expected_status": "answerable",
+      "query": "사업소 연료 배분 추정과 실제 호기 연료는 어떻게 구분하나요?",
+      "question_id": "D07",
+      "required_evidence_groups": [
+        {
+          "group_id": "D07_g1",
+          "alternatives": [
+            {
+              "char_end": 1577,
+              "char_start": 1566,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_19",
+              "unit_sha256": "6d1e2de81f0104093be2f055e66fa44315c0f3c22c5314e7702207826557fd2a",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 47,
+                "line_start": 19,
+                "section": "데이터, 타깃 정의와 품질 관리 / 통합 테이블과 모델 입력"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "scope",
+      "expected_status": "answerable",
+      "query": "시간별 발전 패턴을 SCR 운전 상태로 해석할 수 있나요?",
+      "question_id": "D08",
+      "required_evidence_groups": [
+        {
+          "group_id": "D08_g1",
+          "alternatives": [
+            {
+              "char_end": 438,
+              "char_start": 414,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_3",
+              "unit_sha256": "9cd9d9f174a46f3942ad11a6a307021008929d94acba4aceced1e831b4def299",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 18,
+                "line_start": 3,
+                "section": "데이터, 타깃 정의와 품질 관리 / 현재 데이터 범위"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "units",
+      "expected_status": "answerable",
+      "query": "월 NOx 질량 타깃에는 농도 외에 어떤 자료가 필요하나요?",
+      "question_id": "D09",
+      "required_evidence_groups": [
+        {
+          "group_id": "D09_g1",
+          "alternatives": [
+            {
+              "char_end": 418,
+              "char_start": 388,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_48",
+              "unit_sha256": "b61ba9d47e962be244597678d5cd24d75b7b9f372b65770d4ac675ca7be6c3e3",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 59,
+                "line_start": 48,
+                "section": "데이터, 타깃 정의와 품질 관리 / 연구 타깃 v0"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "validation",
+      "expected_status": "answerable",
+      "query": "반복 확인한 개발 기간을 독립 최종 평가로 부를 수 있나요?",
+      "question_id": "D10",
+      "required_evidence_groups": [
+        {
+          "group_id": "D10_g1",
+          "alternatives": [
+            {
+              "char_end": 375,
+              "char_start": 330,
+              "document_version_id": "84d8ba28ceb8978be58eaa38115399cee4aa501ad6352002dfd85df0d8ccc6ef",
+              "unit_id": "project_evaluation:section_18",
+              "unit_sha256": "d383632314d737eddf92608c0e4ebc020afaf13bd299274fd133d8bac67fb87a",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 42,
+                "line_start": 18,
+                "section": "모델 구성과 성능 비교 / 시간 순서 검증"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "validation",
+      "expected_status": "answerable",
+      "query": "새 호기와 기존 호기의 평가 자료는 어떻게 분리했나요?",
+      "question_id": "D11",
+      "required_evidence_groups": [
+        {
+          "group_id": "D11_g1",
+          "alternatives": [
+            {
+              "char_end": 303,
+              "char_start": 275,
+              "document_version_id": "84d8ba28ceb8978be58eaa38115399cee4aa501ad6352002dfd85df0d8ccc6ef",
+              "unit_id": "project_evaluation:section_18",
+              "unit_sha256": "d383632314d737eddf92608c0e4ebc020afaf13bd299274fd133d8bac67fb87a",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 42,
+                "line_start": 18,
+                "section": "모델 구성과 성능 비교 / 시간 순서 검증"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "metric",
+      "expected_status": "answerable",
+      "query": "RMSE와 MAE는 큰 급등 오차에 어떻게 반응하나요?",
+      "question_id": "D12",
+      "required_evidence_groups": [
+        {
+          "group_id": "D12_g1",
+          "alternatives": [
+            {
+              "char_end": 927,
+              "char_start": 888,
+              "document_version_id": "84d8ba28ceb8978be58eaa38115399cee4aa501ad6352002dfd85df0d8ccc6ef",
+              "unit_id": "project_evaluation:section_18",
+              "unit_sha256": "d383632314d737eddf92608c0e4ebc020afaf13bd299274fd133d8bac67fb87a",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 42,
+                "line_start": 18,
+                "section": "모델 구성과 성능 비교 / 시간 순서 검증"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "scope",
+      "expected_status": "answerable",
+      "query": "Gemini 실제 외부 호출은 완료됐나요 아니면 모의 응답 검사인가요?",
+      "question_id": "D13",
+      "required_evidence_groups": [
+        {
+          "group_id": "D13_g1",
+          "alternatives": [
+            {
+              "char_end": 124,
+              "char_start": 119,
+              "document_version_id": "c4ee8858dddadb8cd62d84a6e8e553762665c6d677c2b8915c61ffc0aef9ab70",
+              "unit_id": "project_api:section_3",
+              "unit_sha256": "d650a3865eb0bafc84d0284365b91e80507812021247709f8c09386d630c8b5b",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 8,
+                "line_start": 3,
+                "section": "Flask API와 Gemini 연동 / 실제 확인한 범위"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "service",
+      "expected_status": "answerable",
+      "query": "LLM이 NOx 수치와 단위를 임의로 바꿀 수 있나요?",
+      "question_id": "D14",
+      "required_evidence_groups": [
+        {
+          "group_id": "D14_g1",
+          "alternatives": [
+            {
+              "char_end": 198,
+              "char_start": 176,
+              "document_version_id": "c4ee8858dddadb8cd62d84a6e8e553762665c6d677c2b8915c61ffc0aef9ab70",
+              "unit_id": "project_api:section_84",
+              "unit_sha256": "80e343508a6b1acd711da3e12ddedc016cd96751ccf2d136109f273b9e4d3c1b",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 88,
+                "line_start": 84,
+                "section": "Flask API와 Gemini 연동 / 응답 처리"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "service",
+      "expected_status": "answerable",
+      "query": "예측 API의 as_of는 어떤 이력 기준을 의미하나요?",
+      "question_id": "D15",
+      "required_evidence_groups": [
+        {
+          "group_id": "D15_g1",
+          "alternatives": [
+            {
+              "char_end": 621,
+              "char_start": 608,
+              "document_version_id": "c4ee8858dddadb8cd62d84a6e8e553762665c6d677c2b8915c61ffc0aef9ab70",
+              "unit_id": "project_api:section_19",
+              "unit_sha256": "9a3ee7bba693d68c2b9f71c600db29355141a2f46394d41eecd456e53d82f7a4",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 36,
+                "line_start": 19,
+                "section": "Flask API와 Gemini 연동 / 입력"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "quality",
+      "expected_status": "answerable",
+      "query": "관측일 충족률은 유효 측정시간 충족률과 같은가요?",
+      "question_id": "D16",
+      "required_evidence_groups": [
+        {
+          "group_id": "D16_g1",
+          "alternatives": [
+            {
+              "char_end": 327,
+              "char_start": 285,
+              "document_version_id": "0e431ab280be10890e2fc0020b2376a631f3b97a2b39ef425b1c971329f133ef",
+              "unit_id": "project_reports:section_17",
+              "unit_sha256": "47f7f46251c349609151e72056aaebe442a922a87266eaa34313a2a1372ba139",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 30,
+                "line_start": 17,
+                "section": "NOx 보고서 JSON·HTML·Flask API / 보고서에 포함한 내용"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "validation",
+      "expected_status": "answerable",
+      "query": "기관 공식 일평균을 재현할 때 원시 구간은 어떻게 가중하나요?",
+      "question_id": "D17",
+      "required_evidence_groups": [
+        {
+          "group_id": "D17_g1",
+          "alternatives": [
+            {
+              "char_end": 71,
+              "char_start": 60,
+              "document_version_id": "c90fbf549aede9d37d29515ff7ba2a2c06ef0ca75d2cde9d84ec7f092267f42a",
+              "unit_id": "project_target_validation:section_45",
+              "unit_sha256": "25e615bd1a125cfb0c3887933e6760773382c71e794d3a38eca4e96a4f1b8abb",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 64,
+                "line_start": 45,
+                "section": "기관 확인→일평균 재현→타깃 규칙 확정→모델 재비교 / 2. 원시 구간을 이용한 공식 일평균 재현"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "metric",
+      "expected_status": "answerable",
+      "query": "저장 예측의 부호 오차는 예측에서 관측을 빼나요?",
+      "question_id": "D18",
+      "required_evidence_groups": [
+        {
+          "group_id": "D18_g1",
+          "alternatives": [
+            {
+              "char_end": 409,
+              "char_start": 396,
+              "document_version_id": "0ade17036cfb6edfec5398bb6ac7b5338752f403252f987eb4983b920dac0575",
+              "unit_id": "project_calculations:section_5",
+              "unit_sha256": "73e72d92da7c720581209e4f1a1e8fbaf8c3964c5ad2918f18e1345b9fe1f89e",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 20,
+                "line_start": 5,
+                "section": "등록 사례의 달력 이력·예측 오차 계산 / 계산 기준"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "calendar",
+      "expected_status": "answerable",
+      "query": "전월 NOx가 0이면 변화율을 어떻게 처리하나요?",
+      "question_id": "D19",
+      "required_evidence_groups": [
+        {
+          "group_id": "D19_g1",
+          "alternatives": [
+            {
+              "char_end": 230,
+              "char_start": 211,
+              "document_version_id": "0ade17036cfb6edfec5398bb6ac7b5338752f403252f987eb4983b920dac0575",
+              "unit_id": "project_calculations:section_5",
+              "unit_sha256": "73e72d92da7c720581209e4f1a1e8fbaf8c3964c5ad2918f18e1345b9fe1f89e",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 20,
+                "line_start": 5,
+                "section": "등록 사례의 달력 이력·예측 오차 계산 / 계산 기준"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "multi",
+      "expected_status": "answerable",
+      "query": "급등 유효성 확인과 실제 운전 기록은 무엇을 요청해야 하나요?",
+      "question_id": "D20",
+      "required_evidence_groups": [
+        {
+          "group_id": "D20_g1",
+          "alternatives": [
+            {
+              "char_end": 44,
+              "char_start": 32,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_85",
+              "unit_sha256": "cfe3a1245a81f7f0652057ad8199a832a00fc5af87f918e3abd81225b00d5ac9",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 92,
+                "line_start": 85,
+                "section": "데이터, 타깃 정의와 품질 관리 / 추가 확보할 자료"
+              }
+            }
+          ]
+        },
+        {
+          "group_id": "D20_g2",
+          "alternatives": [
+            {
+              "char_end": 147,
+              "char_start": 145,
+              "document_version_id": "c90fbf549aede9d37d29515ff7ba2a2c06ef0ca75d2cde9d84ec7f092267f42a",
+              "unit_id": "project_target_validation:section_23",
+              "unit_sha256": "4bb513b5070ddcc76a710cb839ac630468536b41fd6137730e2d43ea59cd2dd0",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 44,
+                "line_start": 23,
+                "section": "기관 확인→일평균 재현→타깃 규칙 확정→모델 재비교 / 1. 기관에 확인할 사항"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "technical",
+      "expected_status": "answerable",
+      "query": "SCR에서 사용하는 NOx 환원제는 암모니아와 요소 중 무엇인가요?",
+      "question_id": "D21",
+      "required_evidence_groups": [
+        {
+          "group_id": "D21_g1",
+          "alternatives": [
+            {
+              "char_end": 2411,
+              "char_start": 2332,
+              "document_version_id": "54c9e632348edcb8e5353e1c6814a09b7d6c2c4a4c4bf3143623892a56b32898",
+              "unit_id": "epa_scr_manual:page_5",
+              "unit_sha256": "2a11d7deb7679bcc4d37e0944c3863f81bce528037f7c7721fd3e41d294eeeb8",
+              "source_locator": {
+                "kind": "pdf_page",
+                "page_index": 4,
+                "pdf_page_number": 5,
+                "printed_page_label": null
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "technical",
+      "expected_status": "answerable",
+      "query": "SCR 반응은 질소산화물을 어떤 생성물로 바꾸나요?",
+      "question_id": "D22",
+      "required_evidence_groups": [
+        {
+          "group_id": "D22_g1",
+          "alternatives": [
+            {
+              "char_end": 612,
+              "char_start": 589,
+              "document_version_id": "54c9e632348edcb8e5353e1c6814a09b7d6c2c4a4c4bf3143623892a56b32898",
+              "unit_id": "epa_scr_manual:page_14",
+              "unit_sha256": "00ddbc57157a5532b866f8526ad8705c04ff6cb4775b79c6505642f3121fb211",
+              "source_locator": {
+                "kind": "pdf_page",
+                "page_index": 13,
+                "pdf_page_number": 14,
+                "printed_page_label": null
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "technical",
+      "expected_status": "answerable",
+      "query": "SCR 성능에 영향을 주는 반응 온도와 체류시간은 어디에서 확인하나요?",
+      "question_id": "D23",
+      "required_evidence_groups": [
+        {
+          "group_id": "D23_g1",
+          "alternatives": [
+            {
+              "char_end": 809,
+              "char_start": 782,
+              "document_version_id": "54c9e632348edcb8e5353e1c6814a09b7d6c2c4a4c4bf3143623892a56b32898",
+              "unit_id": "epa_scr_manual:page_19",
+              "unit_sha256": "304d3f55862b5509159bb4055ddc373a9805728d3eca3f167e990367f4958f4d",
+              "source_locator": {
+                "kind": "pdf_page",
+                "page_index": 18,
+                "pdf_page_number": 19,
+                "printed_page_label": null
+              }
+            }
+          ]
+        },
+        {
+          "group_id": "D23_g2",
+          "alternatives": [
+            {
+              "char_end": 877,
+              "char_start": 819,
+              "document_version_id": "54c9e632348edcb8e5353e1c6814a09b7d6c2c4a4c4bf3143623892a56b32898",
+              "unit_id": "epa_scr_manual:page_19",
+              "unit_sha256": "304d3f55862b5509159bb4055ddc373a9805728d3eca3f167e990367f4958f4d",
+              "source_locator": {
+                "kind": "pdf_page",
+                "page_index": 18,
+                "pdf_page_number": 19,
+                "printed_page_label": null
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "technical",
+      "expected_status": "answerable",
+      "query": "SNCR 반응 온도가 너무 낮거나 높으면 어떤 문제가 발생하나요?",
+      "question_id": "D24",
+      "required_evidence_groups": [
+        {
+          "group_id": "D24_g1",
+          "alternatives": [
+            {
+              "char_end": 360,
+              "char_start": 227,
+              "document_version_id": "e4a14e313a9910cfc11166e712d615386410db06b0e0ef25c4d18cb039180360",
+              "unit_id": "epa_sncr_manual:page_17",
+              "unit_sha256": "6046abe2ae1251daa4f42f42906814f37428e824b9f457b692674a7fadc1a327",
+              "source_locator": {
+                "kind": "pdf_page",
+                "page_index": 16,
+                "pdf_page_number": 17,
+                "printed_page_label": "1-14"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "multi",
+      "expected_status": "answerable",
+      "query": "SCR와 SNCR의 성능에 영향을 주는 운전 요소를 각각 찾아주세요.",
+      "question_id": "D25",
+      "required_evidence_groups": [
+        {
+          "group_id": "D25_g1",
+          "alternatives": [
+            {
+              "char_end": 609,
+              "char_start": 573,
+              "document_version_id": "54c9e632348edcb8e5353e1c6814a09b7d6c2c4a4c4bf3143623892a56b32898",
+              "unit_id": "epa_scr_manual:page_19",
+              "unit_sha256": "304d3f55862b5509159bb4055ddc373a9805728d3eca3f167e990367f4958f4d",
+              "source_locator": {
+                "kind": "pdf_page",
+                "page_index": 18,
+                "pdf_page_number": 19,
+                "printed_page_label": null
+              }
+            }
+          ]
+        },
+        {
+          "group_id": "D25_g2",
+          "alternatives": [
+            {
+              "char_end": 2137,
+              "char_start": 2080,
+              "document_version_id": "e4a14e313a9910cfc11166e712d615386410db06b0e0ef25c4d18cb039180360",
+              "unit_id": "epa_sncr_manual:page_4",
+              "unit_sha256": "040dfb9c5ceb43f6c51eceecc6066498dc21b8e6f7ac52aa4b4a44c173f07805",
+              "source_locator": {
+                "kind": "pdf_page",
+                "page_index": 3,
+                "pdf_page_number": 4,
+                "printed_page_label": "1-1"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "technical",
+      "expected_status": "answerable",
+      "query": "굴뚝 TMS CleanSYS는 어떤 시스템인가요?",
+      "question_id": "D26",
+      "required_evidence_groups": [
+        {
+          "group_id": "D26_g1",
+          "alternatives": [
+            {
+              "char_end": 76,
+              "char_start": 62,
+              "document_version_id": "0e0e9b91878cae3938436f95a520200816af8dd7fa6b035781417f7bdb4bbeef",
+              "unit_id": "keco_cleansys:cleansys_overview",
+              "unit_sha256": "fa9a8c72b7d74082622ab1d2090191d167158b47773a11bee18e9fb3eed9f112",
+              "source_locator": {
+                "kind": "html_extracted_lines",
+                "line_end": 55,
+                "line_start": 1,
+                "section": "굴뚝원격감시체계 운영"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "requires_numeric_tool",
+      "query": "영동 2025년 10월 NOx 예측값을 문서에서 찾아주세요.",
+      "question_id": "D27",
+      "required_evidence_groups": [],
+      "split": "development"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "requires_provider_evidence",
+      "query": "영동 SCR 고장 원인을 확정해 주세요.",
+      "question_id": "D28",
+      "required_evidence_groups": [],
+      "split": "development"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "requires_verified_regulation",
+      "query": "국내 NOx 법정 허용기준 수치를 알려주세요.",
+      "question_id": "D29",
+      "required_evidence_groups": [],
+      "split": "development"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "insufficient_evidence",
+      "query": "김치볶음밥 조리 순서를 알려주세요.",
+      "question_id": "D30",
+      "required_evidence_groups": [],
+      "split": "development"
+    },
+    {
+      "category": "quality",
+      "expected_status": "answerable",
+      "query": "NOx 기록의 0을 정지 상태로 보고 삭제해도 되나요?",
+      "question_id": "T01",
+      "required_evidence_groups": [
+        {
+          "group_id": "T01_g1",
+          "alternatives": [
+            {
+              "char_end": 300,
+              "char_start": 256,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_48",
+              "unit_sha256": "b61ba9d47e962be244597678d5cd24d75b7b9f372b65770d4ac675ca7be6c3e3",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 59,
+                "line_start": 48,
+                "section": "데이터, 타깃 정의와 품질 관리 / 연구 타깃 v0"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "calendar",
+      "expected_status": "answerable",
+      "query": "직전 3개월 평균에 이번 달의 NOx도 포함되나요?",
+      "question_id": "T02",
+      "required_evidence_groups": [
+        {
+          "group_id": "T02_g1",
+          "alternatives": [
+            {
+              "char_end": 265,
+              "char_start": 247,
+              "document_version_id": "0ade17036cfb6edfec5398bb6ac7b5338752f403252f987eb4983b920dac0575",
+              "unit_id": "project_calculations:section_5",
+              "unit_sha256": "73e72d92da7c720581209e4f1a1e8fbaf8c3964c5ad2918f18e1345b9fe1f89e",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 20,
+                "line_start": 5,
+                "section": "등록 사례의 달력 이력·예측 오차 계산 / 계산 기준"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "quality",
+      "expected_status": "answerable",
+      "query": "월별 풍향을 단순 산술평균하지 않고 어떻게 처리했나요?",
+      "question_id": "T03",
+      "required_evidence_groups": [
+        {
+          "group_id": "T03_g1",
+          "alternatives": [
+            {
+              "char_end": 332,
+              "char_start": 323,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_60",
+              "unit_sha256": "7dee3a1c8fe33098635f3f7ea0a719309a79a0c3c62295af7c592054cfbf0267",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 76,
+                "line_start": 60,
+                "section": "데이터, 타깃 정의와 품질 관리 / 구현한 품질·특징 처리"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "scope",
+      "expected_status": "answerable",
+      "query": "관측일 100% 충족이면 센서 측정값도 유효하다고 인증된 건가요?",
+      "question_id": "T04",
+      "required_evidence_groups": [
+        {
+          "group_id": "T04_g1",
+          "alternatives": [
+            {
+              "char_end": 327,
+              "char_start": 306,
+              "document_version_id": "0e431ab280be10890e2fc0020b2376a631f3b97a2b39ef425b1c971329f133ef",
+              "unit_id": "project_reports:section_17",
+              "unit_sha256": "47f7f46251c349609151e72056aaebe442a922a87266eaa34313a2a1372ba139",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 30,
+                "line_start": 17,
+                "section": "NOx 보고서 JSON·HTML·Flask API / 보고서에 포함한 내용"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "scope",
+      "expected_status": "answerable",
+      "query": "사례 파일의 해시가 맞으면 측정 유효성도 확인된 것인가요?",
+      "question_id": "T05",
+      "required_evidence_groups": [
+        {
+          "group_id": "T05_g1",
+          "alternatives": [
+            {
+              "char_end": 726,
+              "char_start": 704,
+              "document_version_id": "0ade17036cfb6edfec5398bb6ac7b5338752f403252f987eb4983b920dac0575",
+              "unit_id": "project_calculations:section_5",
+              "unit_sha256": "73e72d92da7c720581209e4f1a1e8fbaf8c3964c5ad2918f18e1345b9fe1f89e",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 20,
+                "line_start": 5,
+                "section": "등록 사례의 달력 이력·예측 오차 계산 / 계산 기준"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "service",
+      "expected_status": "answerable",
+      "query": "이력의 입수 기준 시각을 제한하는 API 필드는 무엇인가요?",
+      "question_id": "T06",
+      "required_evidence_groups": [
+        {
+          "group_id": "T06_g1",
+          "alternatives": [
+            {
+              "char_end": 606,
+              "char_start": 587,
+              "document_version_id": "c4ee8858dddadb8cd62d84a6e8e553762665c6d677c2b8915c61ffc0aef9ab70",
+              "unit_id": "project_api:section_19",
+              "unit_sha256": "9a3ee7bba693d68c2b9f71c600db29355141a2f46394d41eecd456e53d82f7a4",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 36,
+                "line_start": 19,
+                "section": "Flask API와 Gemini 연동 / 입력"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "target",
+      "expected_status": "answerable",
+      "query": "NOx 농도는 발전 실적이 늘면 반드시 비례해서 커지나요?",
+      "question_id": "T07",
+      "required_evidence_groups": [
+        {
+          "group_id": "T07_g1",
+          "alternatives": [
+            {
+              "char_end": 325,
+              "char_start": 302,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_48",
+              "unit_sha256": "b61ba9d47e962be244597678d5cd24d75b7b9f372b65770d4ac675ca7be6c3e3",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 59,
+                "line_start": 48,
+                "section": "데이터, 타깃 정의와 품질 관리 / 연구 타깃 v0"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "scope",
+      "expected_status": "answerable",
+      "query": "NOx 500 초과 같은 검토 조건을 법적 무효 기준으로 사용해도 되나요?",
+      "question_id": "T08",
+      "required_evidence_groups": [
+        {
+          "group_id": "T08_g1",
+          "alternatives": [
+            {
+              "char_end": 231,
+              "char_start": 216,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_77",
+              "unit_sha256": "4a8d9e805ed21cd8e96078c851e0a20fc35aa78c53c39cb4e8009f9b010772d2",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 84,
+                "line_start": 77,
+                "section": "데이터, 타깃 정의와 품질 관리 / 대표 급등 조사"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "validation",
+      "expected_status": "answerable",
+      "query": "기상 제외 모델이 유리했다면 기상은 NOx와 무관하다고 결론내릴 수 있나요?",
+      "question_id": "T09",
+      "required_evidence_groups": [
+        {
+          "group_id": "T09_g1",
+          "alternatives": [
+            {
+              "char_end": 661,
+              "char_start": 639,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_60",
+              "unit_sha256": "7dee3a1c8fe33098635f3f7ea0a719309a79a0c3c62295af7c592054cfbf0267",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 76,
+                "line_start": 60,
+                "section": "데이터, 타깃 정의와 품질 관리 / 구현한 품질·특징 처리"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "validation",
+      "expected_status": "answerable",
+      "query": "시간 검증에서 같은 달의 여러 호기를 다른 기간에 나눠도 되나요?",
+      "question_id": "T10",
+      "required_evidence_groups": [
+        {
+          "group_id": "T10_g1",
+          "alternatives": [
+            {
+              "char_end": 222,
+              "char_start": 201,
+              "document_version_id": "84d8ba28ceb8978be58eaa38115399cee4aa501ad6352002dfd85df0d8ccc6ef",
+              "unit_id": "project_evaluation:section_18",
+              "unit_sha256": "d383632314d737eddf92608c0e4ebc020afaf13bd299274fd133d8bac67fb87a",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 42,
+                "line_start": 18,
+                "section": "모델 구성과 성능 비교 / 시간 순서 검증"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "service",
+      "expected_status": "answerable",
+      "query": "LLM 설명에서 ppm을 kg으로 환산하도록 사용했나요?",
+      "question_id": "T11",
+      "required_evidence_groups": [
+        {
+          "group_id": "T11_g1",
+          "alternatives": [
+            {
+              "char_end": 234,
+              "char_start": 220,
+              "document_version_id": "c4ee8858dddadb8cd62d84a6e8e553762665c6d677c2b8915c61ffc0aef9ab70",
+              "unit_id": "project_api:section_84",
+              "unit_sha256": "80e343508a6b1acd711da3e12ddedc016cd96751ccf2d136109f273b9e4d3c1b",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 88,
+                "line_start": 84,
+                "section": "Flask API와 Gemini 연동 / 응답 처리"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "technical",
+      "expected_status": "answerable",
+      "query": "SCR의 NOx 저감 반응도 유효 온도 범위가 있나요?",
+      "question_id": "T12",
+      "required_evidence_groups": [
+        {
+          "group_id": "T12_g1",
+          "alternatives": [
+            {
+              "char_end": 1972,
+              "char_start": 1894,
+              "document_version_id": "54c9e632348edcb8e5353e1c6814a09b7d6c2c4a4c4bf3143623892a56b32898",
+              "unit_id": "epa_scr_manual:page_19",
+              "unit_sha256": "304d3f55862b5509159bb4055ddc373a9805728d3eca3f167e990367f4958f4d",
+              "source_locator": {
+                "kind": "pdf_page",
+                "page_index": 18,
+                "pdf_page_number": 19,
+                "printed_page_label": null
+              }
+            }
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "technical",
+      "expected_status": "answerable",
+      "query": "SCR 성능 점검에는 촉매 비활성과 촉매 관리도 포함되나요?",
+      "question_id": "T13",
+      "required_evidence_groups": [
+        {
+          "group_id": "T13_g1",
+          "alternatives": [
+            {
+              "char_end": 1764,
+              "char_start": 1742,
+              "document_version_id": "54c9e632348edcb8e5353e1c6814a09b7d6c2c4a4c4bf3143623892a56b32898",
+              "unit_id": "epa_scr_manual:page_19",
+              "unit_sha256": "304d3f55862b5509159bb4055ddc373a9805728d3eca3f167e990367f4958f4d",
+              "source_locator": {
+                "kind": "pdf_page",
+                "page_index": 18,
+                "pdf_page_number": 19,
+                "printed_page_label": null
+              }
+            }
+          ]
+        },
+        {
+          "group_id": "T13_g2",
+          "alternatives": [
+            {
+              "char_end": 1798,
+              "char_start": 1778,
+              "document_version_id": "54c9e632348edcb8e5353e1c6814a09b7d6c2c4a4c4bf3143623892a56b32898",
+              "unit_id": "epa_scr_manual:page_19",
+              "unit_sha256": "304d3f55862b5509159bb4055ddc373a9805728d3eca3f167e990367f4958f4d",
+              "source_locator": {
+                "kind": "pdf_page",
+                "page_index": 18,
+                "pdf_page_number": 19,
+                "printed_page_label": null
+              }
+            }
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "technical",
+      "expected_status": "answerable",
+      "query": "SNCR에서 저부하 운전이나 연료 변경은 온도 분포에 어떤 영향을 주나요?",
+      "question_id": "T14",
+      "required_evidence_groups": [
+        {
+          "group_id": "T14_g1",
+          "alternatives": [
+            {
+              "char_end": 393,
+              "char_start": 283,
+              "document_version_id": "e4a14e313a9910cfc11166e712d615386410db06b0e0ef25c4d18cb039180360",
+              "unit_id": "epa_sncr_manual:page_18",
+              "unit_sha256": "38b39fe9e5d071bb6e8c079d1aeb82e04259e2789904c04a7d011db4d36e5ceb",
+              "source_locator": {
+                "kind": "pdf_page",
+                "page_index": 17,
+                "pdf_page_number": 18,
+                "printed_page_label": "1-15"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "technical",
+      "expected_status": "answerable",
+      "query": "암모니아 슬립 ammonia slip의 뜻은 무엇인가요?",
+      "question_id": "T15",
+      "required_evidence_groups": [
+        {
+          "group_id": "T15_g1",
+          "alternatives": [
+            {
+              "char_end": 2154,
+              "char_start": 2101,
+              "document_version_id": "e3785c278f633011765806c1f71ea59054609048904d0889b2835b0288d8168b",
+              "unit_id": "epa_sncr_fact:block_1",
+              "unit_sha256": "48077552bc0c9079a02b8160dd5dcb25fce9412dc1a02470f259e08b54eb3715",
+              "source_locator": {
+                "block_index": 0,
+                "block_number": 1,
+                "kind": "html_text_block",
+                "section": "NEPIS public text"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "multi",
+      "expected_status": "answerable",
+      "query": "타깃 자료와 LLM 응답 처리에서 임의 질량 환산을 어떻게 제한하나요?",
+      "question_id": "T16",
+      "required_evidence_groups": [
+        {
+          "group_id": "T16_g1",
+          "alternatives": [
+            {
+              "char_end": 483,
+              "char_start": 445,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_48",
+              "unit_sha256": "b61ba9d47e962be244597678d5cd24d75b7b9f372b65770d4ac675ca7be6c3e3",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 59,
+                "line_start": 48,
+                "section": "데이터, 타깃 정의와 품질 관리 / 연구 타깃 v0"
+              }
+            }
+          ]
+        },
+        {
+          "group_id": "T16_g2",
+          "alternatives": [
+            {
+              "char_end": 234,
+              "char_start": 220,
+              "document_version_id": "c4ee8858dddadb8cd62d84a6e8e553762665c6d677c2b8915c61ffc0aef9ab70",
+              "unit_id": "project_api:section_84",
+              "unit_sha256": "80e343508a6b1acd711da3e12ddedc016cd96751ccf2d136109f273b9e4d3c1b",
+              "source_locator": {
+                "kind": "markdown_lines",
+                "line_end": 88,
+                "line_start": 84,
+                "section": "Flask API와 Gemini 연동 / 응답 처리"
+              }
+            }
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "requires_numeric_tool",
+      "query": "삼천포 2025년 10월 NOx 농도를 찾아 알려주세요.",
+      "question_id": "T17",
+      "required_evidence_groups": [],
+      "split": "test"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "requires_provider_evidence",
+      "query": "여수의 실제 촉매 교체 일시를 알려주세요.",
+      "question_id": "T18",
+      "required_evidence_groups": [],
+      "split": "test"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "requires_verified_regulation",
+      "query": "국내 발전소의 NOx 허용기준 수치와 위반 확정을 해주세요.",
+      "question_id": "T19",
+      "required_evidence_groups": [],
+      "split": "test"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "insufficient_evidence",
+      "query": "초콜릿 케이크 만드는 레시피를 알려주세요.",
+      "question_id": "T20",
+      "required_evidence_groups": [],
+      "split": "test"
+    }
+  ]
+}

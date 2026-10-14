@@ -1,0 +1,13 @@
+cohort,profile,answerable_questions,unsupported_questions,hit_questions,hit_at_5,recall_at_5,mrr,unsupported_handled_count,false_acceptance_count
+additional_questions,baseline:hybrid,20,10,13,0.65,0.65,0.38333333333333336,4,6
+additional_questions,baseline:keyword,20,10,11,0.55,0.55,0.37916666666666665,4,6
+additional_questions,baseline:vector,20,10,12,0.6,0.6,0.42666666666666664,4,6
+additional_questions,domain:hybrid,20,10,14,0.7,0.7,0.4583333333333333,10,0
+additional_questions,domain:keyword,20,10,13,0.65,0.65,0.5666666666666667,10,0
+additional_questions,domain:vector,20,10,14,0.7,0.7,0.45583333333333337,10,0
+observed_development,baseline:hybrid,42,8,29,0.6904761904761905,0.6904761904761905,0.5257936507936508,7,1
+observed_development,baseline:keyword,42,8,32,0.7619047619047619,0.7619047619047619,0.6019841269841271,6,2
+observed_development,baseline:vector,42,8,23,0.5476190476190477,0.5476190476190477,0.4392857142857143,7,1
+observed_development,domain:hybrid,42,8,31,0.7380952380952381,0.7380952380952381,0.5734126984126984,8,0
+observed_development,domain:keyword,42,8,35,0.8333333333333334,0.8333333333333334,0.6511904761904762,8,0
+observed_development,domain:vector,42,8,27,0.6428571428571429,0.6309523809523809,0.46111111111111114,8,0

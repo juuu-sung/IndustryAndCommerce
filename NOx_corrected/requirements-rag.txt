@@ -1,0 +1,8 @@
+# Optional RAG environment; the existing NOx environment remains unchanged.
+transformers==4.46.3
+huggingface-hub==0.36.2
+tokenizers==0.20.3
+safetensors==0.6.2
+pypdf==5.9.0
+torch==2.5.1
+# Reuse numpy/BeautifulSoup from requirements-verified; do not upgrade the NOx environment.

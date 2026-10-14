@@ -1,0 +1,509 @@
+{
+  "annotation_status": "assistant_source_span_checked; independent_expert_review_pending",
+  "corpus_version_id": "b5786216194fd1c107c48fda49d0e162dce2cb72ea5694d11c2ed36718d71d82",
+  "gold_version_id": "cba44727ec80e5585635f00d1778230ff2310e0d5fedf4977d99f585c350c9f4",
+  "purpose": "Additional wording on the same source concepts; not an independent expert benchmark.",
+  "questions": [
+    {
+      "category": "project",
+      "expected_status": "answerable",
+      "query": "프로젝트의 NOx 정답 단위와 월평균 산정 방식은?",
+      "question_id": "F01",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 180,
+              "char_start": 167,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_48",
+              "unit_sha256": "b61ba9d47e962be244597678d5cd24d75b7b9f372b65770d4ac675ca7be6c3e3"
+            }
+          ],
+          "group_id": "F01_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "project",
+      "expected_status": "answerable",
+      "query": "월 발전 실적과 ppm만으로 질량 kg 정답을 계산할 수 있습니까?",
+      "question_id": "F02",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 483,
+              "char_start": 445,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_48",
+              "unit_sha256": "b61ba9d47e962be244597678d5cd24d75b7b9f372b65770d4ac675ca7be6c3e3"
+            }
+          ],
+          "group_id": "F02_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "project",
+      "expected_status": "answerable",
+      "query": "유류 kL를 석탄 ton과 더해서 총연료로 쓰면 안 되는 이유는?",
+      "question_id": "F03",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 650,
+              "char_start": 636,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_19",
+              "unit_sha256": "6d1e2de81f0104093be2f055e66fa44315c0f3c22c5314e7702207826557fd2a"
+            }
+          ],
+          "group_id": "F03_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "project",
+      "expected_status": "answerable",
+      "query": "전월 관측이 비었을 때 두 달 전 행을 전월 특징으로 쓰나요?",
+      "question_id": "F04",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 183,
+              "char_start": 159,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_60",
+              "unit_sha256": "7dee3a1c8fe33098635f3f7ea0a719309a79a0c3c62295af7c592054cfbf0267"
+            }
+          ],
+          "group_id": "F04_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "project",
+      "expected_status": "answerable",
+      "query": "NOx 정답 결측 월도 중앙값으로 채워 모델 학습에 포함합니까?",
+      "question_id": "F05",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 1751,
+              "char_start": 1721,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_19",
+              "unit_sha256": "6d1e2de81f0104093be2f055e66fa44315c0f3c22c5314e7702207826557fd2a"
+            }
+          ],
+          "group_id": "F05_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "project",
+      "expected_status": "answerable",
+      "query": "풍향을 월 단위 특징으로 만들 때 방향의 원형 특성을 고려했나요?",
+      "question_id": "F06",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 332,
+              "char_start": 323,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_60",
+              "unit_sha256": "7dee3a1c8fe33098635f3f7ea0a719309a79a0c3c62295af7c592054cfbf0267"
+            }
+          ],
+          "group_id": "F06_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "project",
+      "expected_status": "answerable",
+      "query": "이력 조회 API에서 입수 당시의 정보를 제한하는 시각 필드는?",
+      "question_id": "F07",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 606,
+              "char_start": 587,
+              "document_version_id": "c4ee8858dddadb8cd62d84a6e8e553762665c6d677c2b8915c61ffc0aef9ab70",
+              "unit_id": "project_api:section_19",
+              "unit_sha256": "9a3ee7bba693d68c2b9f71c600db29355141a2f46394d41eecd456e53d82f7a4"
+            }
+          ],
+          "group_id": "F07_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "project",
+      "expected_status": "answerable",
+      "query": "NOx 500이라는 검토 숫자로 측정을 법적 무효 처리해도 되나요?",
+      "question_id": "F08",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 231,
+              "char_start": 216,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_77",
+              "unit_sha256": "4a8d9e805ed21cd8e96078c851e0a20fc35aa78c53c39cb4e8009f9b010772d2"
+            }
+          ],
+          "group_id": "F08_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "project",
+      "expected_status": "answerable",
+      "query": "NOx 관측일 충족률이 높으면 유효 측정시간도 충족한 것인가요?",
+      "question_id": "F09",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 327,
+              "char_start": 306,
+              "document_version_id": "0e431ab280be10890e2fc0020b2376a631f3b97a2b39ef425b1c971329f133ef",
+              "unit_id": "project_reports:section_17",
+              "unit_sha256": "47f7f46251c349609151e72056aaebe442a922a87266eaa34313a2a1372ba139"
+            }
+          ],
+          "group_id": "F09_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "project",
+      "expected_status": "answerable",
+      "query": "기상 제외 후보의 성능이 좋아졌다고 날씨 영향이 없다고 할 수 있나요?",
+      "question_id": "F10",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 661,
+              "char_start": 639,
+              "document_version_id": "be36e6b1f7fa667399fe1430ba0c19599e7b80c593df6735c0bbb073e14ee732",
+              "unit_id": "project_data:section_60",
+              "unit_sha256": "7dee3a1c8fe33098635f3f7ea0a719309a79a0c3c62295af7c592054cfbf0267"
+            }
+          ],
+          "group_id": "F10_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "project",
+      "expected_status": "answerable",
+      "query": "LLM 출력에서 연구 농도를 질량으로 변환하는 기능이 있나요?",
+      "question_id": "F11",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 234,
+              "char_start": 220,
+              "document_version_id": "c4ee8858dddadb8cd62d84a6e8e553762665c6d677c2b8915c61ffc0aef9ab70",
+              "unit_id": "project_api:section_84",
+              "unit_sha256": "80e343508a6b1acd711da3e12ddedc016cd96751ccf2d136109f273b9e4d3c1b"
+            }
+          ],
+          "group_id": "F11_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "project",
+      "expected_status": "answerable",
+      "query": "같은 월에 관측된 여러 호기의 모델 평가 기간을 따로 나눌 수 있나요?",
+      "question_id": "F12",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 222,
+              "char_start": 201,
+              "document_version_id": "84d8ba28ceb8978be58eaa38115399cee4aa501ad6352002dfd85df0d8ccc6ef",
+              "unit_id": "project_evaluation:section_18",
+              "unit_sha256": "d383632314d737eddf92608c0e4ebc020afaf13bd299274fd133d8bac67fb87a"
+            }
+          ],
+          "group_id": "F12_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "technical",
+      "expected_status": "answerable",
+      "query": "SCR의 reducing reagent로 요소도 암모니아처럼 사용할 수 있나요?",
+      "question_id": "F13",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 2411,
+              "char_start": 2332,
+              "document_version_id": "54c9e632348edcb8e5353e1c6814a09b7d6c2c4a4c4bf3143623892a56b32898",
+              "unit_id": "epa_scr_manual:page_5",
+              "unit_sha256": "2a11d7deb7679bcc4d37e0944c3863f81bce528037f7c7721fd3e41d294eeeb8"
+            }
+          ],
+          "group_id": "F13_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "technical",
+      "expected_status": "answerable",
+      "query": "SCR가 NOx를 환원했을 때 질소와 물이 생성되나요?",
+      "question_id": "F14",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 612,
+              "char_start": 589,
+              "document_version_id": "54c9e632348edcb8e5353e1c6814a09b7d6c2c4a4c4bf3143623892a56b32898",
+              "unit_id": "epa_scr_manual:page_14",
+              "unit_sha256": "00ddbc57157a5532b866f8526ad8705c04ff6cb4775b79c6505642f3121fb211"
+            }
+          ],
+          "group_id": "F14_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "technical",
+      "expected_status": "answerable",
+      "query": "SCR reaction temperature와 residence time이 운영 성능 요소인가요?",
+      "question_id": "F15",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 877,
+              "char_start": 819,
+              "document_version_id": "54c9e632348edcb8e5353e1c6814a09b7d6c2c4a4c4bf3143623892a56b32898",
+              "unit_id": "epa_scr_manual:page_19",
+              "unit_sha256": "304d3f55862b5509159bb4055ddc373a9805728d3eca3f167e990367f4958f4d"
+            }
+          ],
+          "group_id": "F15_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "technical",
+      "expected_status": "answerable",
+      "query": "SNCR 온도가 낮거나 높을 때 kinetics와 oxidation에 무슨 변화가 있나요?",
+      "question_id": "F16",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 360,
+              "char_start": 227,
+              "document_version_id": "e4a14e313a9910cfc11166e712d615386410db06b0e0ef25c4d18cb039180360",
+              "unit_id": "epa_sncr_manual:page_17",
+              "unit_sha256": "6046abe2ae1251daa4f42f42906814f37428e824b9f457b692674a7fadc1a327"
+            }
+          ],
+          "group_id": "F16_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "technical",
+      "expected_status": "answerable",
+      "query": "SNCR low load나 different fuels가 temperature profile에 영향을 줍니까?",
+      "question_id": "F17",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 393,
+              "char_start": 283,
+              "document_version_id": "e4a14e313a9910cfc11166e712d615386410db06b0e0ef25c4d18cb039180360",
+              "unit_id": "epa_sncr_manual:page_18",
+              "unit_sha256": "38b39fe9e5d071bb6e8c079d1aeb82e04259e2789904c04a7d011db4d36e5ceb"
+            }
+          ],
+          "group_id": "F17_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "technical",
+      "expected_status": "answerable",
+      "query": "SCR catalyst deactivation과 catalyst management를 점검해야 하나요?",
+      "question_id": "F18",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 1798,
+              "char_start": 1778,
+              "document_version_id": "54c9e632348edcb8e5353e1c6814a09b7d6c2c4a4c4bf3143623892a56b32898",
+              "unit_id": "epa_scr_manual:page_19",
+              "unit_sha256": "304d3f55862b5509159bb4055ddc373a9805728d3eca3f167e990367f4958f4d"
+            }
+          ],
+          "group_id": "F18_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "technical",
+      "expected_status": "answerable",
+      "query": "SNCR의 ammonia slip은 반응하지 않은 암모니아 배출을 뜻하나요?",
+      "question_id": "F19",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 2154,
+              "char_start": 2101,
+              "document_version_id": "e3785c278f633011765806c1f71ea59054609048904d0889b2835b0288d8168b",
+              "unit_id": "epa_sncr_fact:block_1",
+              "unit_sha256": "48077552bc0c9079a02b8160dd5dcb25fce9412dc1a02470f259e08b54eb3715"
+            }
+          ],
+          "group_id": "F19_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "project",
+      "expected_status": "answerable",
+      "query": "CleanSYS의 굴뚝 측정은 관제센터와 어떻게 연결됩니까?",
+      "question_id": "F20",
+      "required_evidence_groups": [
+        {
+          "alternatives": [
+            {
+              "char_end": 76,
+              "char_start": 62,
+              "document_version_id": "0e0e9b91878cae3938436f95a520200816af8dd7fa6b035781417f7bdb4bbeef",
+              "unit_id": "keco_cleansys:cleansys_overview",
+              "unit_sha256": "fa9a8c72b7d74082622ab1d2090191d167158b47773a11bee18e9fb3eed9f112"
+            }
+          ],
+          "group_id": "F20_g1"
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "requires_numeric_tool",
+      "query": "영동 2025년 10월 월 NOx 농도와 예측값을 알려주세요.",
+      "question_id": "F21",
+      "required_evidence_groups": [],
+      "split": "test"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "requires_numeric_tool",
+      "query": "삼천포 2026년 실제 발전량은?",
+      "question_id": "F22",
+      "required_evidence_groups": [],
+      "split": "test"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "requires_provider_evidence",
+      "query": "영동의 센서 무효 기록을 확정해 주세요.",
+      "question_id": "F23",
+      "required_evidence_groups": [],
+      "split": "test"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "requires_provider_evidence",
+      "query": "영동 촉매의 실제 수명은 몇 년인가요?",
+      "question_id": "F24",
+      "required_evidence_groups": [],
+      "split": "test"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "requires_provider_evidence",
+      "query": "여수 SCR 고장 발생 여부를 단정해 주세요.",
+      "question_id": "F25",
+      "required_evidence_groups": [],
+      "split": "test"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "requires_verified_regulation",
+      "query": "국내 법적 NOx 기준과 위반 여부는?",
+      "question_id": "F26",
+      "required_evidence_groups": [],
+      "split": "test"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "insufficient_evidence",
+      "query": "NOx 문서와 무관한 케이크 레시피를 알려주세요.",
+      "question_id": "F27",
+      "required_evidence_groups": [],
+      "split": "test"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "insufficient_evidence",
+      "query": "주말 남해 여행지를 추천해 주세요.",
+      "question_id": "F28",
+      "required_evidence_groups": [],
+      "split": "test"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "insufficient_evidence",
+      "query": "오늘 축구 결과를 알려주세요.",
+      "question_id": "F29",
+      "required_evidence_groups": [],
+      "split": "test"
+    },
+    {
+      "category": "unsupported",
+      "expected_status": "insufficient_evidence",
+      "query": "복권 번호를 골라 주세요.",
+      "question_id": "F30",
+      "required_evidence_groups": [],
+      "split": "test"
+    }
+  ],
+  "schema_version": 1
+}

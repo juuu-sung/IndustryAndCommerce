@@ -1,0 +1,133 @@
+{
+  "annotation_status": "assistant_source_span_checked; independent_expert_review_pending",
+  "corpus_version_id": "b5786216194fd1c107c48fda49d0e162dce2cb72ea5694d11c2ed36718d71d82",
+  "created_at": "2026-10-13T17:49:03.717346+00:00",
+  "evaluation_id": "516340f1ac24a135dcea2935f8e148e71b0072a2f4ac7cd1f2a863ff4a6f1552",
+  "expert_review_completed": false,
+  "generation_evaluated": false,
+  "gold_version_id": "7708aaaf621bdd7b357ff268d49c2a9948742abb94e44f6bfdb99a20d753c33f",
+  "index_version_id": "0491ecae6c808f3e257ac117e08ea533ee767541aa015ae253a51d0b44a5674d",
+  "limitations": [
+    "Small assistant-authored benchmark; not independent expert evaluation.",
+    "Test results are held out from method selection for this run only.",
+    "No LLM answer faithfulness or NOx model performance is measured.",
+    "Unsupported handling includes explicit routing rules, not a general semantic guarantee."
+  ],
+  "metrics": {
+    "development": {
+      "hybrid": {
+        "answerable_questions": 26,
+        "false_acceptance_count": 1,
+        "false_acceptance_rate": 0.25,
+        "hit_at_5": 0.6923076923076923,
+        "hit_questions": 18,
+        "latency_p50_ms": 260.4845624882728,
+        "latency_p95_ms": 365.2332022669724,
+        "mrr": 0.5897435897435898,
+        "questions": 30,
+        "recall_at_5": 0.6923076923076923,
+        "unsupported_handled_count": 3,
+        "unsupported_handled_rate": 0.75,
+        "unsupported_questions": 4
+      },
+      "keyword": {
+        "answerable_questions": 26,
+        "false_acceptance_count": 1,
+        "false_acceptance_rate": 0.25,
+        "hit_at_5": 0.7692307692307693,
+        "hit_questions": 20,
+        "latency_p50_ms": 213.22897938080132,
+        "latency_p95_ms": 281.162334990222,
+        "mrr": 0.6346153846153846,
+        "questions": 30,
+        "recall_at_5": 0.7692307692307693,
+        "unsupported_handled_count": 3,
+        "unsupported_handled_rate": 0.75,
+        "unsupported_questions": 4
+      },
+      "vector": {
+        "answerable_questions": 26,
+        "false_acceptance_count": 1,
+        "false_acceptance_rate": 0.25,
+        "hit_at_5": 0.6538461538461539,
+        "hit_questions": 17,
+        "latency_p50_ms": 165.85756244603544,
+        "latency_p95_ms": 292.5101150874979,
+        "mrr": 0.5846153846153845,
+        "questions": 30,
+        "recall_at_5": 0.6538461538461539,
+        "unsupported_handled_count": 3,
+        "unsupported_handled_rate": 0.75,
+        "unsupported_questions": 4
+      }
+    },
+    "test": {
+      "hybrid": {
+        "answerable_questions": 16,
+        "false_acceptance_count": 0,
+        "false_acceptance_rate": 0.0,
+        "hit_at_5": 0.6875,
+        "hit_questions": 11,
+        "latency_p50_ms": 237.96614608727396,
+        "latency_p95_ms": 311.34758137632167,
+        "mrr": 0.421875,
+        "questions": 20,
+        "recall_at_5": 0.6875,
+        "unsupported_handled_count": 4,
+        "unsupported_handled_rate": 1.0,
+        "unsupported_questions": 4
+      },
+      "keyword": {
+        "answerable_questions": 16,
+        "false_acceptance_count": 1,
+        "false_acceptance_rate": 0.25,
+        "hit_at_5": 0.75,
+        "hit_questions": 12,
+        "latency_p50_ms": 211.25714550726116,
+        "latency_p95_ms": 276.7484562471509,
+        "mrr": 0.5489583333333333,
+        "questions": 20,
+        "recall_at_5": 0.75,
+        "unsupported_handled_count": 3,
+        "unsupported_handled_rate": 0.75,
+        "unsupported_questions": 4
+      },
+      "vector": {
+        "answerable_questions": 16,
+        "false_acceptance_count": 0,
+        "false_acceptance_rate": 0.0,
+        "hit_at_5": 0.375,
+        "hit_questions": 6,
+        "latency_p50_ms": 136.57677045557648,
+        "latency_p95_ms": 259.28313898621127,
+        "mrr": 0.203125,
+        "questions": 20,
+        "recall_at_5": 0.375,
+        "unsupported_handled_count": 4,
+        "unsupported_handled_rate": 1.0,
+        "unsupported_questions": 4
+      }
+    }
+  },
+  "policy": {
+    "branch_candidates": 20,
+    "hybrid_requires_semantic_candidate": true,
+    "latency": "warm CPU encoder; query cache cleared before each measured request; asset verification included",
+    "minimum_cosine": 0.8,
+    "rrf_k": 60,
+    "selection": "development mean group Recall@5 - 0.25 * unsupported false acceptance rate; ties: MRR, then keyword/vector/hybrid simplicity order",
+    "threshold_policy": "0.80 fixed before scoring; no test tuning",
+    "top_k": 5
+  },
+  "prior_evaluation_id": "89a088409931d8307bea1cc9eff89bcf4cea52115402e078dd6a48a94c4ce983",
+  "schema_version": 1,
+  "selected_method": "keyword",
+  "selection_id": "11ef7573875421bdc782343453ee3240e81bac8691926e71c98dfe60c10dab0a",
+  "test_results_previously_observed": true,
+  "benchmark_hit_definition": "A result fully covers a pre-registered evidence span; unregistered equivalents require review.",
+  "test_count": 348,
+  "test_skips": 0,
+  "source_documents": 10,
+  "source_units": 226,
+  "chunks": 616
+}

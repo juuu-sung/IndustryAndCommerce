@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-14",
+  "tests_passed": 419,
+  "tests_skipped": 0,
+  "existing_pandas_future_warnings": 1,
+  "new_tests": {
+    "domain_search": 17,
+    "evidence_reports": 22,
+    "agent_workflow": 32
+  },
+  "previous_tests": 348,
+  "source_files_preserved": 9,
+  "old_report_contract_preserved": true,
+  "implementation_hashes": {
+    "search": "b091848cbf292d137ed1cac9a08dab05dc85aea75e2db945270f1dbdd5c06b54",
+    "report": "0c8c83f39c3f1e35c10bd4e0732646b6688cf13d3252dc5e5064e338ab410fde",
+    "agent": "7c70f981a10527bebe254dad47a63f653de3ae0e41f29f40ff503d0de94be3a2"
+  },
+  "http": {
+    "all_passed": true,
+    "checks": [
+      {
+        "path": "/api/health",
+        "status": 200
+      },
+      {
+        "path": "/api/agent/status",
+        "status": 200
+      },
+      {
+        "path": "/api/rag/search/domain",
+        "status": 200
+      },
+      {
+        "path": "/api/predict",
+        "status": 200
+      },
+      {
+        "path": "/api/reports/evidence-drafts",
+        "status": 201
+      },
+      {
+        "path": "/api/reports/evidence/er_7afa8a218e3018541236ce1bbce3f01d6eafa53a41a725e2bb7d19e76ffd874a",
+        "status": 200
+      },
+      {
+        "path": "/api/reports/evidence/er_7afa8a218e3018541236ce1bbce3f01d6eafa53a41a725e2bb7d19e76ffd874a/html",
+        "status": 200
+      },
+      {
+        "path": "/api/agent/runs",
+        "status": 202
+      },
+      {
+        "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+        "status": 200
+      },
+      {
+        "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+        "status": 200
+      },
+      {
+        "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+        "status": 200
+      },
+      {
+        "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+        "status": 200
+      },
+      {
+        "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+        "status": 200
+      },
+      {
+        "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+        "status": 200
+      },
+      {
+        "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+        "status": 200
+      },
+      {
+        "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+        "status": 200
+      },
+      {
+        "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+        "status": 200
+      },
+      {
+        "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd/report",
+        "status": 200
+      },
+      {
+        "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd/report/html",
+        "status": 200
+      },
+      {
+        "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd/resume",
+        "status": 401
+      },
+      {
+        "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd/resume",
+        "status": 202
+      },
+      {
+        "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+        "status": 200
+      },
+      {
+        "path": "/api/agent/runs/ag_80a78d1f7967483d8fde1f9aeb4aa8cd",
+        "status": 200
+      }
+    ],
+    "request_count": 23,
+    "real_ml_api_used": true,
+    "real_document_retrieval_used": true,
+    "approval_case": "synthetic_only",
+    "real_plant_report_approved": false,
+    "rule_tool_calls": 5,
+    "review_status": "approved",
+    "gemini_actual_call_verified": false,
+    "facts_unchanged": true,
+    "source_and_revision_bound": true,
+    "no_tool_reexecution_after_review": true
+  },
+  "gemini": {
+    "actual_external_call_verified": false,
+    "credentials_configured": false,
+    "live_requested": true,
+    "reason": "live_flag_and_GEMINI_API_KEY_and_GEMINI_MODEL_required",
+    "secrets_in_output": false,
+    "status": "not_run"
+  },
+  "real_case_demo": {
+    "run_id": "ag_5236d660d72e4acc9c9dbbd5d91c7e23",
+    "status": "waiting_review",
+    "report_id": "er_b0f85d8843b96c0735b3e520ca90064beaf21a8713b37a7df00ae0a34e885d5b",
+    "report_revision": 1,
+    "context_hash": "a0eddf4cad1d3170c4d300760bbaf73945582e2fd13c28281387687750fae4d4",
+    "rule_tool_calls": 5,
+    "facts": 22,
+    "citations": 8,
+    "analysis_status": "fallback",
+    "analysis_reason": "gemini_not_configured",
+    "actual_external_call_verified": false,
+    "real_report_approved": false,
+    "provider_measurement_validity": "pending"
+  },
+  "limitations": [
+    "Semantic claim faithfulness and expert source review are unverified.",
+    "Default planner is rule based; Gemini tool selection has mock validation only.",
+    "Real-case report remains waiting for the user; only synthetic decisions were approved.",
+    "Forward forecasting, new-unit adapters and plant controls are not implemented."
+  ]
+}

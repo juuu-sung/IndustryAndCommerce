@@ -26,3 +26,4 @@ NOx_corrected/reports/*
 !NOx_corrected/reports/README.md
 NOx_corrected/examples/*
 !NOx_corrected/examples/request.json
+!NOx_corrected/examples/report_request.json

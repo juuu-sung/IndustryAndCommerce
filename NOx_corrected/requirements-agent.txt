@@ -1,0 +1,6 @@
+# Optional packages installed in data/runtime/copilot/agent/deps, not globally.
+langgraph==1.2.15
+langgraph-checkpoint==4.3.0
+langgraph-checkpoint-sqlite==3.1.2
+langchain-core==1.6.10
+# Full resolved package receipt is recorded after integration validation.

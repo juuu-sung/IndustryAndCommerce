@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NOx Copilot 확장 구조</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3f6fc;color:#14223d;font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.6}main{max-width:1080px;margin:auto;padding:32px 26px}h1{margin:0;font-size:28px}p{margin:8px 0}.subtitle{color:#526078;font-size:15px}.legend{display:flex;gap:18px;margin:18px 0;font-size:13px}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}.done{background:#dceefa;border-color:#7bb2d2!important}.planned{background:#efebff;border-color:#b0a0e5!important}.card{border:1.5px solid;border-radius:14px;padding:18px;background-clip:padding-box}h2{font-size:18px;margin:0 0 8px}h3{font-size:16px;margin:0 0 8px}.state{font-size:12px;font-weight:700;color:#436281}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.center{max-width:780px;margin:auto}.arrow{text-align:center;color:#677992;font-size:22px;line-height:1.5;margin:7px 0}.tools{font-size:13px;color:#506078}.footer{margin-top:20px;padding:16px;background:white;border-radius:12px;font-size:13px}.note{font-size:13px;color:#5c6578;margin:14px 0}@media(max-width:700px){main{padding:22px 14px}.grid{grid-template-columns:1fr}h1{font-size:24px}}
+</style></head><body><main>
+<h1>NOx 예측 → 근거가 있는 분석 보고서 → Agent</h1>
+<p class="subtitle">수치 계산은 서버, 문서 근거는 RAG, 도구 선택은 Agent가 담당하는 목표 구조</p>
+<div class="legend"><span><i class="dot" style="background:#76b6d8"></i>구현 완료</span><span><i class="dot" style="background:#aa96e3"></i>후속 구현 예정</span></div>
+<div class="card done center"><div class="state">완료 · 도구 실행 / 중단·재개</div><h2>Flask + LangGraph + SQLite</h2><p>기본 규칙 선택 → 허용 도구 → 체크포인트 → 인증된 검토·재개</p><div class="tools">Gemini 도구 선택은 코드·모의 검증 · 실제 호출 설정 필요</div></div>
+<div class="arrow" aria-label="아래 기능을 선택하여 호출">↓</div>
+<div class="grid">
+<section class="card done"><div class="state">완료 · 관측과 계산</div><h3>자료 이력 · 사례 등록부</h3><p>SQLite 최신 관측 이력<br>고정 평가 관측·파일 해시</p><div class="tools">전월 변화 · 직전 3개월 평균<br>품질 상태 · 관측 충족 수</div></section>
+<section class="card done"><div class="state">완료 · 저장 평가 / 기존 추론</div><h3>NOx 모델과 예측값</h3><p>XGBoost · LightGBM<br>모델·전처리·기간 버전</p><div class="tools">저장 예측 오차 계산 완료<br>Copilot 새 조건 추론 어댑터는 예정</div></section>
+<section class="card done"><div class="state">완료 · 문서 검색 / 비교</div><h3>RAG 검색 API</h3><p>실제 문서 10개 · 616개 청크<br>버전·원문 위치·적용 범위</p><div class="tools">범위·한영 용어 보완 / BM25<br>추가 질문 55% → 65% · 검색 품질 보완 필요</div></section>
+</div>
+<div class="arrow" aria-label="도구 결과를 보고서 구성에 사용">↓</div>
+<section class="card done center"><div class="state">완료 · 보고서 JSON / HTML / API</div><h2>수치 사실 + 문서 근거 + 보고서 검증</h2><p>사실 ID·근거 ID·원본 위치·버전·품질 경고를 JSON/HTML로 연결</p><div class="tools">숫자·단위·참조 보호 · Gemini 설정 미비/실패 시 기본 설명</div></section>
+<div class="arrow" aria-label="검토 가능한 보고서 초안을 생성">↓</div>
+<section class="card done center"><div class="state">완료 · 인증된 검토 / 개정·재개</div><h2>검토 대기 → 승인 / 수정 / 거절</h2><p>토큰·현재 상태·보고서 ID·개정·내용 해시 확인 · 이전 버전 승인 차단</p><div class="tools">합성 사례 승인 검증 · 실제 영동 보고서는 사용자 검토 대기</div></section>
+<div class="footer"><strong>일관성 원칙</strong><br>과거 평가 재현과 현재 조건 추론을 구분합니다. 검색 문서만으로 측정 유효성이나 특정 설비의 고장을 확정하지 않습니다. Gemini 근거 설명·도구 선택 코드와 모의 검증은 완료했으며 실제 외부 호출·의미적 근거 충실성은 후속 검증 대상입니다.</div>
+<p class="note">완료: 수치·문서 근거 보고서·규칙 기반 Agent·검토/재개. 전체 419개 검사 통과. 실제 Gemini·새 조건/호기·운영 배포는 후속 검증입니다.</p>
+</main></body></html>
